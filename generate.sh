@@ -1,8 +1,8 @@
 #!/bin/sh
 PATH=$PATH:~/.cabal/bin/
 rm -f output.*
-~/.cabal/bin/pandoc --filter pandoc-citeproc --biblatex --bibliography=biblio.bib --csl=ieee.csl --toc -H style.css -t html5 --smart --mathml --template=template -o output.html *.md
-~/.cabal/bin/pandoc --filter pandoc-citeproc --bibliography=biblio.bib --csl=ieee.csl --template=template --toc -o output.tex *.md
+~/.cabal/bin/pandoc --filter pandoc-citeproc --biblatex --bibliography=biblio.bib --csl=ieee.csl --toc -H style.css -t html5 --smart --mathml --template=template -o output.html $1
+~/.cabal/bin/pandoc --filter pandoc-citeproc --bibliography=biblio.bib --csl=ieee.csl --template=template --toc -o output.tex $1
 pdflatex output.tex > /dev/null
 rm -f output.aux output.log output.out output.toc
 
