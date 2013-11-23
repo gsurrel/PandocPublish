@@ -17,6 +17,10 @@ the versions in the repositories are too old, so you will need some time to do:
 2. `cabal install pandoc pandoc-citeproc`
 3. Drink some tea, it's good for you
 
+In case you upload online, you will need PHP for having the index of the files,
+but you could manually create an index.html file aside if you want or don't
+want PHP.
+
 Configuration
 =============
 
