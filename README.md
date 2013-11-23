@@ -4,6 +4,9 @@ PandocPublish
 Small tool feeding Pandoc with Markdown, and generating HTML, TeX and PDF, and
 uploading everything online.
 
+This is a really early version of something bigger. I mean, totally different,
+it's currently for playing with Pandoc power for personnal reports.
+
 Requirements
 ============
 
@@ -24,5 +27,13 @@ everything from `echo "<?php` to the end.
 Usgae
 =====
 
-Just open a terminal to the working directory and run the script `./generate.sh`.
-That's all.
+Just open a terminal to the working directory and run the script 
+`./generate.sh SourceFile.md`. That's all.
+
+TODO
+====
+
+1. Check script parameters
+2. Move all that to a nice web interface
+3. Let people change templates and stuff
+4. Upload images
